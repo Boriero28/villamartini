@@ -1,0 +1,354 @@
+html{
+	scroll-behavior: smooth;
+	
+}
+html,body{height:100%;}
+
+body{background:#a9a9a9;}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+p,h4,h3,tr,td{
+	font-family: 'Roboto', sans-serif;
+}
+
+
+/*menu in alto*/
+
+.header{background:#333;
+	
+
+}
+.header_logo{
+	color:white;
+	float:left;
+	display:block;
+	padding:20px;
+	text-decoration:none;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Smooch', cursive;
+	font-size: large;
+}
+.header_menu{
+	
+	float:right;
+	margin:0px;
+	padding:0px;
+	transition: all 0.4s cubic-bezier(.215, .61, .355,1);
+}
+.header_menu_item{display:inline-block;}
+.header_menu_item a{
+	color:white;
+	display:block;
+	padding:20px;
+	text-decoration:none;
+}
+.header_menu_item a:hover {background:#000;} /*ombra dietro*/
+.hamburger{
+	
+	display: none;
+}
+
+
+/*stile generale*/
+
+.cover {
+    /*float: left;*/
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+	margin-bottom:0px;
+	
+}
+.cover img {    
+    margin: 0 ;
+    padding: 0;
+    background: #fff;
+    border: none;
+	display: block;
+}
+
+
+
+.cover span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 400%;
+	padding: 30px;
+	border-radius: 15px;
+	background-color: rgba(0, 0, 0, 0.3);
+   }
+
+.cover span strong{font: oblique;}
+
+
+.articolo{
+	width: 100%;
+	background-image: url("img/sfondo.webp");
+	padding-top:0x;
+	padding-bottom: 20px;
+	opacity: 0.9;
+	display: block;
+	float: left;
+}
+.titolo{
+	color:black;text-align:center;
+}
+
+/* .indice{
+	text-align:center;
+	border: #000 2px solid;
+	padding: 0;
+	margin: 0;
+	border-radius: 20px;
+}
+.indice a{
+	color:black;
+	text-decoration:none;
+}
+.indice ul li{list-style: none;} */
+
+/*stile generale pagine*/
+
+.testo{
+	border-radius: 20px;
+	max-width:1000px;
+	margin:40px auto;
+	padding:20px;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding-top:20px;	
+}
+
+
+
+/*card per foto*/
+
+
+
+.card{
+	width:30%;
+	margin:0 1.5%;
+	font-size:15px;
+	background-color:#D3D3D3;
+	float:left;
+	margin-bottom:5px;
+}
+.card_immagine{
+	width:100%;
+	height:auto;
+	
+}
+.card_testo{
+	padding:5px 20px;
+}
+.card_testo h3{margin-bottom:0px;}
+
+/*tabelle pagina orari*/
+
+.table{
+	
+	margin: 0 auto;
+	padding:8px;
+	text-align:center;
+	width: 80px;
+}
+.table tr,td{
+	border:1px solid black;
+	padding:8px;
+}
+
+/*chiama con bottone*/
+
+.fa-phone{
+	color:black;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+}
+.chiama{
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 5px;
+	border-radius: 10px;
+	position: absolute;
+	
+	left: 50%;
+	transform: translate(-50%);
+}
+
+/*mappa responsive*/
+
+.mappa{
+	
+	position: relative;
+padding-bottom: 73.9%;
+padding-top: 0;
+height: 0;
+overflow: hidden;
+}
+.mappa iframe {
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 40px;
+}
+
+/*menu*/
+
+.menu
+{
+	margin: 0;
+	padding:0px;
+	display: block;
+	
+	width:40%;
+	float: left;
+}
+.label
+{
+	background-color: rgba(0, 0, 0, 0.2);
+	padding:10px;
+	
+	
+	text-align:center;
+	margin:auto;
+	color: black;
+}
+
+/*sponsor*/
+
+.sponsor{
+	margin:0 auto;
+}
+
+/*footer*/
+
+.footer{
+	height: 80px;
+	background:#333;
+	padding:30px;
+	color:white;
+	margin:0px;
+	bottom:0;
+	z-index:999999;
+	
+	}
+.footer p{margin-bottom:25px;}
+.mfooter{padding-bottom: 10px;}
+
+/*riferimenti social*/
+
+.social{
+	float:right;
+}
+.social ul{
+	position: absolute;  
+    transform: translate(-100%, -100%);
+    padding: 0;
+    margin: 10px;
+    display: flex;
+}
+.social ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.social ul li .fa {
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+}
+.social ul li .fa:hover {
+    color: #ffffff;
+}
+.social ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+/*movimento icone*/
+.social ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+/*colore icone*/
+.social ul li:nth-child(1) a:hover {/*facebook*/
+    background-color: #3b5999;
+}
+.social ul li:nth-child(2) a:hover {/*twit*/
+    background-color: #55acee;
+}
+.social ul li:nth-child(3) a:hover {/*insta*/
+    background-color: #e4405f;
+}
+
+/*smartphone*/
+
+@media only screen and (max-width:790px){
+	
+	.hamburger{display:block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	z-index: 3;
+	}
+	/*.header_menu{width:100%;height:0px;overflow:hidden;}*/
+	.header_menu{ 
+		position: absolute;
+		margin: 8px;
+		top: 0;
+		right: -100%;             /*DA ERRORE QUA!*/
+		height: 100%;
+		padding-top: 80px;
+		background:#222;
+		opacity: 0.9;
+		z-index:1;
+	}
+	.hamburger span{
+		background-color: white;
+		height: 3px;
+		width: 100%;
+		display: block;
+		margin-bottom: 5px;
+		
+	}
+	.header_menu li{display: block;}
+	.menu--open{right: 0;}
+
+	/* .articolo{height:100%} */
+
+	.card{width:90%;margin:5%;}
+
+	.social{float:left;}
+	.social ul{transform: translate(-15%, -70%);}
+	.social ul li a {width: 30px;height: 30px;}
+	.social ul li .fa {font-size: 20px;line-height: 31px;}
+	.sponsor{margin:15%;}
+	.cover span {font-size: 200%;}
+	.slide1{width: 1000px;height: 800px;}
+}
+
+
+
+
+
+
+
+
